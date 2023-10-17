@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2023 The Evolution X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -9,17 +8,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Inherit from vicky device
 $(call inherit-product, device/motorola/vicky/device.mk)
 
 PRODUCT_DEVICE := vicky
-PRODUCT_NAME := omni_vicky
+PRODUCT_NAME := evolution_vicky
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g72
 PRODUCT_MANUFACTURER := motorola
+
+# Evolution X flags
+TARGET_BOOT_ANIMATION_RES := 1080
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 

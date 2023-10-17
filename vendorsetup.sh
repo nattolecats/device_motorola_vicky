@@ -1,10 +1,5 @@
 #
-# Copyright (C) 2023 The Android Open Source Project
-# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2023 The Evolution X Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
-add_lunch_combo omni_vicky-user
-add_lunch_combo omni_vicky-userdebug
-add_lunch_combo omni_vicky-eng

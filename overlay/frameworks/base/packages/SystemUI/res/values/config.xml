@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2023 The Evolution X Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Configure 13px of extra protection around the front-facing camera -->
+    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
+        M 662,72
+        a 57,57 0 1 0 114,0
+        a 57,57 0 1 0 -114,0
+        Z
+    </string>
+</resources>
