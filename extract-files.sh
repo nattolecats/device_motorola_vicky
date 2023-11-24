@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Copyright (C) 2023 The Evolution X Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #

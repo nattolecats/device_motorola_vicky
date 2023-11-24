@@ -1,9 +1,25 @@
 //
-// Copyright (C) 2023 The Android Open Source Project
-// Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+// Copyright (C) 2023 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 soong_namespace {
+}
+
+cc_prebuilt_library_shared {
+	name: "libpowerstatshaldataprovider",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/libpowerstatshaldataprovider.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
 }
